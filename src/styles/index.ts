@@ -15,6 +15,15 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         margin: 0;
+        background: #292929;
+        font-family: 'Open Sans', sans-serif;
+
+        p,h1,h2,h3,h4,h5 , h6 {
+            padding: 0;
+            margin: 0;
+        } 
+  color: #eee;
+
     }
 
     a{

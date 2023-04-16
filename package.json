@@ -5,14 +5,18 @@
   "type": "module",
   "format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install"
   },
   "dependencies": {
+    "framer-motion": "^10.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.10.0",
+    "react-type-animation": "^3.0.1",
     "styled-components": "^5.3.9",
     "vite-tsconfig-paths": "^4.2.0"
   },
