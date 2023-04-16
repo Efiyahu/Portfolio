@@ -12,7 +12,6 @@ const Specialties = () => {
   const animationControlsTwo = useAnimation();
   React.useEffect(() => {
     function sequence() {
-      console.log(isInView);
       if (isInView) {
         animationControls.start({ y: 0, opacity: 1 });
         animationControlsTwo.start({ y: 0, opacity: 1 });

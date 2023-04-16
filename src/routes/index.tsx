@@ -1,4 +1,5 @@
 import Layout from 'components/Layout';
+import Container from 'components/Layout/Container';
 import { useRoutes, Navigate, RouteObject } from 'react-router-dom';
 import { HomeScreen } from 'screens';
 
@@ -9,15 +10,27 @@ const Routes = () => {
       children: [
         {
           path: '/',
-          element: <HomeScreen />,
+          element: (
+            <Container>
+              <HomeScreen />
+            </Container>
+          ),
         },
         {
           path: '/works',
-          element: <div>Works</div>,
+          element: (
+            <Container>
+              <div>Works</div>
+            </Container>
+          ),
         },
         {
           path: '/resume',
-          element: <div>Resume</div>,
+          element: (
+            <Container>
+              <div>Resume</div>
+            </Container>
+          ),
         },
       ],
     },
