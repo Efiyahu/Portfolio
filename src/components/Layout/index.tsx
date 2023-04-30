@@ -19,7 +19,7 @@ const Layout = () => {
               Works
             </div>
           </StyledLink>
-          <StyledLink to="/Resume">
+          <StyledLink to="/skills">
             <div>
               <BsFileEarmarkPersonFill color="#eee" />
               Resume

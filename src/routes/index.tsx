@@ -1,7 +1,9 @@
 import Layout from 'components/Layout';
 import Container from 'components/Layout/Container';
-import { useRoutes, Navigate, RouteObject } from 'react-router-dom';
+import { useRoutes, RouteObject } from 'react-router-dom';
 import { HomeScreen } from 'screens';
+import ResumeScreen from 'screens/ResumeScreen';
+import WorksScreen from 'screens/WorksScreen';
 
 const Routes = () => {
   const routes: RouteObject[] = [
@@ -20,19 +22,23 @@ const Routes = () => {
           path: '/works',
           element: (
             <Container>
-              <div>Works</div>
+              <WorksScreen />
             </Container>
           ),
         },
         {
-          path: '/resume',
+          path: '/skills',
           element: (
             <Container>
-              <div>Resume</div>
+              <ResumeScreen />
             </Container>
           ),
         },
       ],
+    },
+    {
+      path: '*',
+      element: <div>Page not found</div>,
     },
   ];
 
