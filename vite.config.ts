@@ -14,7 +14,7 @@ export default defineConfig({
     eslint(),
     VitePluginFonts({
       google: {
-        families: ['Roboto'],
+        families: ['Open Sans'],
       },
     }),
   ],

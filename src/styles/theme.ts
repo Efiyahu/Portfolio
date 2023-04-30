@@ -4,6 +4,9 @@ export type ThemeType = {
       light: string;
       dark: string;
     };
+    background: {
+      red: string;
+    };
   };
   typography: {
     sizes: {
@@ -23,6 +26,9 @@ const theme: ThemeType = {
     primary: {
       light: '#eee',
       dark: '#292929',
+    },
+    background: {
+      red: '#E25346',
     },
   },
   typography: {
